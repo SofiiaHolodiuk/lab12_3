@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Використання оператора SWITCH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Вибір улюбленої пори року</h1>
+        <script>
+            "use strict";
+            let season = prompt("Введіть вашу улюблену пору року (зима, весна, літо, осінь)").toLowerCase();
+            let message;
+
+            switch (season) {
+                case "зима":
+                    message = "Ви любите холод та сніг!";
+                    break;
+                case "весна":
+                    message = "Ви любите теплі весняні дні!";
+                    break;
+                case "літо":
+                    message = "Ви любите сонце та море!";
+                    break;
+                case "осінь":
+                    message = "Ви любите барвисту осінь!";
+                    break;
+                default:
+                    message = "Будь ласка, введіть одну з чотирьох пір року.";
+            }
+
+            document.write("<p>" + message + "</p>");
+        </script>
+    </div>
+</body>
+</html>
